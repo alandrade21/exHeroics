@@ -1,11 +1,13 @@
 {
-  "name": "exHeroics",
+  "name": "ex-heroics",
   "version": "0.0.1",
   "description": "Tool for RPG game support.",
   "homepage": "https://github.com/alandrade21/exHeroics",
-  "author": {
-    "name": "André Andrade",
-    "email": "alandrade21@gmail.com"
+  "license": "AGPL-3.0",
+  "author": "André Andrade <alandrade21@gmail.com> (https://github.com/alandrade21)",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/alandrade21/exHeroics.git"
   },
   "keywords": [
     "RPG",
