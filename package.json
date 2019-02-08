@@ -44,7 +44,6 @@
     "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "dependencies": {
-    "electron-json-storage": "^4.1.6",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^4.0.6",
     "typeorm": "^0.2.11"
@@ -65,7 +64,6 @@
     "@angular/router": "~7.2.0",
     "@ngx-translate/core": "11.0.1",
     "@ngx-translate/http-loader": "4.0.0",
-    "@types/electron-json-storage": "^4.0.0",
     "@types/jasmine": "^2.8.7",
     "@types/jasminewd2": "^2.0.3",
     "@types/node": "^8.9.4",
