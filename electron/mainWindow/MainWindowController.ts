@@ -2,7 +2,7 @@ import { app, BrowserWindow, screen } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
 
-export class MainWindowMwdiator {
+export class MainWindowController {
   private win: BrowserWindow | null;
   private args = process.argv.slice(1);
   private serve: boolean = this.args.some(val => val === '--serve');
