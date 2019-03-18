@@ -14,6 +14,7 @@ export class InitializationController extends AppConfigurator<ConfigOptions> {
       this.cfm.writeFile(this.appOptions);
     } catch (error) {
       this.errorDialog(error);
+      throw error;
     }
   }
 

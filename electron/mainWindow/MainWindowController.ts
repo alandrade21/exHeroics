@@ -3,6 +3,7 @@ import * as path from 'path';
 import * as url from 'url';
 
 export class MainWindowController {
+
   private win: BrowserWindow | null;
   private args = process.argv.slice(1);
   private serve: boolean = this.args.some(val => val === '--serve');
@@ -48,7 +49,8 @@ export class MainWindowController {
       x: 0,
       y: 0,
       width: size.width,
-      height: size.height
+      height: size.height,
+      show: false
     });
 
     if (this.serve) {
@@ -74,5 +76,19 @@ export class MainWindowController {
       this.win = null;
     });
 
+  }
+
+  public get mainWindow(): BrowserWindow | null {
+    return this.win;
+  }
+
+  public showMainWindow(): void {
+    if (this.win && !this.win.isVisible()) {
+      this.win.once('ready-to-show', () => {
+        if (this.win) {
+          this.win.show();
+        }
+      });
+    }
   }
 }

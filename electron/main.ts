@@ -1,12 +1,26 @@
+import { app } from 'electron';
+
+import { MainWindowController } from './mainWindow/MainWindowController';
 import { InitializationController } from './initialization/InitializationController';
 import { DEV_CONFIG_FOLDER_PATH } from './constants';
-import { envDetector, ConfigFileManager } from '@alandrade21/electron-arch';
 
-envDetector.printEnvironment();
+app.on('ready', () => {
 
-const x = new InitializationController('ExHeroics', DEV_CONFIG_FOLDER_PATH);
-x.doConfig();
-// console.log(x.appOptions);
+  // It is necessary to create the window first in order to show the dialogs.
+  const mainWindowController = new MainWindowController();
+
+  // Do the app initialization.
+  try {
+    const initController = new InitializationController('ExHeroics', DEV_CONFIG_FOLDER_PATH);
+    initController.doConfig();
+  } catch (error) {
+    app.quit();
+    return;
+  }
+
+  
+});
+
 
 
 
