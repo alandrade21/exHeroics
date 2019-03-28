@@ -4,7 +4,7 @@ import * as url from 'url';
 
 import { InitializationController } from './initialization/InitializationController';
 import { DEV_CONFIG_FOLDER_PATH } from './constants';
-import { MainWindowController, envDetector } from '@alandrade21/electron-arch';
+import { MainWindowController, envDetector, InvalidParameterError } from '@alandrade21/electron-arch';
 
 try {
   app.on('ready', () => {
