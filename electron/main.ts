@@ -1,6 +1,4 @@
-import { app, BrowserWindow } from 'electron';
-import * as path from 'path';
-import * as url from 'url';
+import { app } from 'electron';
 
 import { InitializationController } from './initialization/InitializationController';
 import { DEV_CONFIG_FOLDER_PATH } from './constants';
@@ -36,10 +34,3 @@ try {
   // throw e;
   console.log(e);
 }
-
-
-
-
-
-
-
