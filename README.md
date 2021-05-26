@@ -17,8 +17,7 @@ Whith this tool you can manage:
 
 This project currently runs with:
 
-- Angular v~7.2.0
-- Electron v4.0.1
-- Electron Builder v~20.36.2
-- SQLite v^4.0.6
-- TypeOrm v^0.2.11
+- Angular v11.2.0
+- Electron v11.2.0
+- SQLite v^5.0.2
+- TypeOrm v^0.2.32

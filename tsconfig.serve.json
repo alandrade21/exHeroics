@@ -1,12 +1,11 @@
-// this file compiles the Angular part 
+// this file compiles the electron part
 {
-  "compileOnSave": false,
   "compilerOptions": {
     /* Basic Options */
-    "module": "es2020",
     "incremental": true,
+    //"tsBuildInfoFile": "./",
     "target": "es5",
-    "moduleResolution": "node",
+    //"module": "commonjs",
     "lib": [
       "es2018",
       "es2017",
@@ -16,7 +15,7 @@
     ],
     "declaration": false,
     "sourceMap": true,
-    "outDir": "./dist/out-tsc",
+    "outDir": "./dist/electron-out-tsc",
     "importHelpers": true,
     //"noEmitOnError": true,
 
@@ -26,7 +25,7 @@
     "strictNullChecks": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    
+
     /* Additional Checks */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -34,25 +33,26 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Module Resolution Options */
+    "moduleResolution": "node",
+    "baseUrl": ".",
     "typeRoots": [
       "node_modules/@types"
+    ],
+    "types": [
+      "node"
     ],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     
     /* Experimental Options */
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true 
+    "experimentalDecorators": true
   },
-  "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
-  ],
   "include": [
-    "src/**/*.d.ts"
+    "./electron/main.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/*.spec.ts"
   ]
 }
-
