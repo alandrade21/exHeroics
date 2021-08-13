@@ -4,7 +4,7 @@
 
 # Introduction
 
-This project is a tool intended to support an RPG game. 
+This project is a tool intended to support an RPG game.
 
 Whith this tool you can manage:
 

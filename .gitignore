@@ -29,6 +29,7 @@ src/**/*.js
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/projSnips.code-snippets
 
 # misc
 /.sass-cache
