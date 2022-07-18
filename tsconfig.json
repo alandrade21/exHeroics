@@ -18,7 +18,7 @@
     "sourceMap": true,
     "outDir": "./dist/out-tsc",
     "importHelpers": true,
-    //"noEmitOnError": true,
+    "noEmitOnError": true,
 
     /* Strict Type-Checking Options */
     "strict": true,
@@ -32,6 +32,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "allowJs": true,
 
     /* Module Resolution Options */
     "typeRoots": [
@@ -53,6 +54,16 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+    "fullTemplateTypeCheck": true,
+    "annotateForClosureCompiler": true,
+    "strictInjectionParameters": true,
+    "skipTemplateCodegen": false,
+    "preserveWhitespaces": true,
+    "skipMetadataEmit": false,
+    "disableTypeScriptVersionCheck": true
+  }
 }
 

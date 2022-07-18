@@ -27,6 +27,7 @@ export class InitializationController extends AppConfigurator<ConfigOptions> {
     super.doConfig();
   }
 
+  // Override
   protected createConfigFile(): void {
     this._appOptions = new ConfigOptions();
     this._cfm.writeFile(this._appOptions);

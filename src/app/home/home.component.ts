@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   // TODO Comentado por erro de compilação
   constructor(/*private router: Router*/) { }
 
-  ngOnInit(): void { }
-
+  ngOnInit(): void {
+    console.log('HomeComponent INIT');
+  }
 }

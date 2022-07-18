@@ -24,9 +24,13 @@ import { DEV_CONFIG_FOLDER_PATH, DEV_DATA_FOLDER_PATH } from './constants';
 import { MainWindowController, envHelper, MainWindowPosition } from '@alandrade21/electron-arch';
 
 try {
+  console.log('Starting exHeroics app.');
   app.on('ready', () => {
 
+    console.log('exHeroics is ready.');
+
     if(!app.isPackaged) {
+      console.log('exHeroics is running on dev mode.');
       envHelper.printEnvironment();
     }
     

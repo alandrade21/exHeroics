@@ -15,9 +15,9 @@
     ],
     "declaration": false,
     "sourceMap": true,
-    "outDir": "./dist/electron-out-tsc",
+    "outDir": "./dist/app-out-tsc",
     "importHelpers": true,
-    //"noEmitOnError": true,
+    "noEmitOnError": true,
 
     /* Strict Type-Checking Options */
     "strict": true,
@@ -48,8 +48,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
-  "include": [
-    "./electron/main.ts"
+  "files": [
+    "./app/main.ts"
   ],
   "exclude": [
     "node_modules",
