@@ -31,7 +31,7 @@
     "ng": "ng",
     "ng:serve": "ng serve -c web -o",
     "electron": "electron",
-    "electron:serve": "wait-on tcp:4200/ && npm run electron:serve-tsc && npm run electron . -- --serve",
+    "electron:serve": "wait-on tcp:4200 && npm run electron:serve-tsc && npm run electron . -- --serve",
     "electron:serve-tsc": "tsc -p tsconfig.serve.json",
     "build": "npm run electron:serve-tsc && ng build --base-href ./",
     "build:dev": "npm run build -- -c dev",
@@ -47,6 +47,7 @@
     "lint": "ng lint"
   },
   "dependencies": {
+    "@alandrade21/electron-arch": "file:../../arquitetura/electron-arch",
     "@angular/common": "13.3.1",
     "@angular/compiler": "13.3.1",
     "@angular/core": "13.3.1",
@@ -55,12 +56,12 @@
     "@angular/platform-browser": "13.3.1",
     "@angular/platform-browser-dynamic": "13.3.1",
     "@angular/router": "13.3.1",
-    "rxjs": "7.5.5",
-    "tslib": "^2.1.0",
-    "zone.js": "~0.11.5",
     "reflect-metadata": "^0.1.13",
+    "rxjs": "7.5.5",
     "sqlite3": "^5.0.5",
-    "typeorm": "^0.2.32"
+    "tslib": "^2.1.0",
+    "typeorm": "^0.2.32",
+    "zone.js": "~0.11.5"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "13.1.0",

@@ -44,7 +44,7 @@ try {
                                                           DEV_CONFIG_FOLDER_PATH, 
                                                           DEV_DATA_FOLDER_PATH);
       initController.doConfig();
-    } catch (error) {
+    } catch (error: any) {
       console.log('entrei no catch ', error);
       dialog.showErrorBox('Initialization Error', error.message);
       app.quit();
