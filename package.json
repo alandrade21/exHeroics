@@ -47,7 +47,7 @@
     "lint": "ng lint"
   },
   "dependencies": {
-    "@alandrade21/electron-arch": "file:../../arquitetura/electron-arch",
+    "@alandrade21/electron-arch": "@alandrade21/electron-arch",
     "@angular/common": "13.3.1",
     "@angular/compiler": "13.3.1",
     "@angular/core": "13.3.1",
@@ -58,9 +58,9 @@
     "@angular/router": "13.3.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "7.5.5",
-    "sqlite3": "^5.0.5",
+    "sqlite3": "^5.0.9",
     "tslib": "^2.1.0",
-    "typeorm": "^0.2.32",
+    "typeorm": "^0.3.7",
     "zone.js": "~0.11.5"
   },
   "devDependencies": {
@@ -79,7 +79,7 @@
     "@types/jasmine": "3.10.3",
     "@types/jasminewd2": "2.0.10",
     "@types/node": "17.0.23",
-    "@types/sqlite3": "^3.1.7",
+    "@types/sqlite3": "^3.1.8",
     "@typescript-eslint/eslint-plugin": "5.17.0",
     "@typescript-eslint/parser": "5.17.0",
     "conventional-changelog-cli": "2.2.2",
